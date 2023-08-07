@@ -61,6 +61,7 @@ import java.sql.Timestamp;
 
 Если сообщения от одного страхователя следуют не подряд, они не считаются повторяющимися.
 
+# Решение задачи
 
 ```Java
 String srcTopicName = "requests";
@@ -126,6 +127,7 @@ for (ConsumerRecord<String, String> record : records){
 }
 
 consumer.close();
+producer.close();
 ```
 
     offset = 0, key = null, value = insurer=mike;model=toyota;osago
@@ -310,6 +312,7 @@ for (ConsumerRecord<String, String> record : records){
 
 ```Java
 consumer.close();
+producer.close();
 ```
 
 **Еще одно добавление**
@@ -367,6 +370,7 @@ for (ConsumerRecord<String, String> record : records){
 }
 consumer.commitSync();
 consumer.close();
+producer.close();
 ```
 
     offset = 0, key = null, value = insurer=mike;model=toyota;osago
