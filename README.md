@@ -1,5 +1,5 @@
 # DEVKI: Apache Kafka для инженеров данных
-> Школа Больших Данных, преподаватель: Михаил Королев
+> Школа Больших Данных, преподаватель: Михаил Королев<br>
 > https://bigdataschool.ru/courses/apache-kafka-developers
 
 ## Теория
